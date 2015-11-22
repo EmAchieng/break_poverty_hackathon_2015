@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="bootstrap-3.3.5-dist/css/jquery-ui.css">
+		<link rel="stylesheet" href="bootstrap-3.3.5-dist/css/main.css">
+        <script src="js/angular.min.js"></script>
+          <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+        <script src="angular.js"></script>
+
+		<style type="text/css">
+
+		.sidebar{
+			border-style: double;
+			border-color: white;
+			float: left;
+			height: inherit;
+			background-color: #e0e0e0;
+
+		}
+		#pitch{
+			background-color: green;
+			height: 200px;
+			width: cover;
+		}
+
+		</style>
+		
+		
+		
+		<title>MKOMBOZI</title>
+		
+
+	</head>
+
+<body >
+
+<div class="container-fluid">
+	<div class="row" id="pitch">
+		<img src="background_images/books.jpg" width="100%" height="100%">
+	</div>
+	<section class="row">
+		<div class="col-sm-3 col-md-2 sidebar">
+	          <ul class="nav nav-sidebar">
+	            <li class="active" id="charge"><a href="#">Teachers Portal<span class="sr-only">(current)</span></a></li><br>
+	            <li id='second'><a href="#">Students Portal</a></li><br>	
+	            <li><a href="#">TSC Official</a></li><br>
+	            <li><a href="#">Ministry Officer</a></li><br>
+	          </ul>
+	          <ul class="nav nav-sidebar">
+	            <li><a href="#students">County Official</a></li><br>
+	            <li><a href="">Contact</a></li><br>
+	            <li><a href="">Feedback</a></li>
+	          </ul>
+	          
+	    </div>
+	    <div class="test">
+	    	
+	    </div>
+	    <div class="cont">
+	    	<div class="col-sm-9 col-md-10">
+	    	<form>
+	    	<h3 class="text-center">Teacher's Details</h3>
+	    		<section class="row">
+	    		<div class="col-sm-4"></div>
+	    		<div class="col-sm-4" id="sign_up">
+	    		<label>Tsc Number</label><br>
+	    		<input  type="number" placeholder="Enter a valid Tsc Number" validate ><br>
+	    		<label>Password</label><br>
+	    		<input  type="password" placeholder="Enter Your password" validate ><br><br>
+	    		<button id="first">Log In</button>
+	    		</div>
+	    		<div class="col-sm-4"></div>
+	    		</section>
+
+	    	</form>
+
+	    </div>
+	   
+	    </div>
+	    <!-- 
+	    <div class="cont">
+	    	<div class="col-sm-9 col-md-10">
+	    	<form>
+	    	<h3 class="text-center">Students's Details</h3>
+	    		<section class="row">
+	    		<div class="col-sm-4"></div>
+	    		<div class="col-sm-4" id="sign_up">
+	    		<label>Admission Number</label><br>
+	    		<input  type="number" placeholder="Enter your admission Number" validate ><br>
+	    		<label>Full Name</label><br>
+	    		<input  type="text" placeholder="Enter Your full names" validate ><br>
+	    		<label>Password</label><br>
+	    		<input  type="password" placeholder="Enter Your password" validate ><br><br>
+	    		<label>Confirm Password</label><br>
+	    		<input  type="password" placeholder="Confirm Your password" validate ><br><br>
+	    		<button id="second">Sign In</button>
+	    		</div>
+	    		<div class="col-sm-4"></div>
+	    		</section>
+
+	    	</form>
+
+	    </div> -->
+	   
+	    </div>
+	    
+    </section>
+<!--
+    <section class="row">
+    	
+<div class="col-sm-6" ng-controller="MyController">
+	<form name="userForm" ng-submit ="formSubmit()" novalidate>
+						<div class="form-group">
+							<label>Full Names</label>
+							<input type="text" name="name" ng-model="formData.name" class="form-control" required="" /> 
+						<span ng-show="userForm.name.$error.required">Enter Student Name.</span>
+      				
+						
+						</div>
+
+
+                        <div class="form-group">
+							<label>Admission Number</label>
+							<input type="number" name="admission" ng-model="formData.adm_no" class="form-control" required="" /> 
+						<span ng-show="userForm.admission.$error.required">Empty Fields!!.</span>
+							
+						</div>
+
+
+                         <div class="form-group">
+							<label>Parent Name</label>
+							<input type="text" name="parent" ng-model="formData.parent_name" class="form-control" required="" /> 
+						 <span ng-show="userForm.parent.$error.required">Empty Fields!!.</span>
+						 
+						</div>
+
+
+						<div class="form-group">
+							<label>Select a Movie Category</label>
+							<select ng-model="formData.age" class="form-control">
+								<option>20</option>
+								<option>89</option>				
+							</select>
+						</div>
+					
+						<div>
+							<button type="submit" class="btn btn-primary">Send Request</button>
+						</div>
+					</form>
+
+
+
+</div>
+
+<div ng-controller="GetController" class="col-sm-4">
+<table border = "1">
+  <tr ng-repeat="x in names">
+   <td>{{x.name}}</td>
+    <td>{{x.adm_no}}</td>
+     <td>{{x.age}}</td>
+      <td>{{x.parent_name}}</td>
+
+</tr>
+</table>
+
+
+</div>
+
+
+
+    </section>>
+-->
+
+
+
+
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/jquery.validate.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="./jquery.js"></script>
+
+</body>
+</html>
+
